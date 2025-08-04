@@ -29,8 +29,13 @@ test.describe("Testando GET para api JsonPlaceHolder", () => {
       expect(typeof postagem.title).toBe("string")
       expect(typeof postagem.views).toBe("number")
     })
-      console.log("Estrutura das postagens validada com sucesso.");
-      const responseData = await response.json();
-      console.log("Resposta retornada", responseData);
+      console.log("Estrutura das postagens validada com sucesso.")
+      const responseData = await response.json()
+      console.log("Resposta retornada", responseData)
   })
+
+    test("Listar comentários para uma postagem específica - Validação da Estrutura", async ({request}) => {
+
+    })
+
 })
